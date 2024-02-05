@@ -1,0 +1,218 @@
+\documentclass[12pt,a4paper,twoside]{article}
+\usepackage[T1]{fontenc}      %-->  formato de fontes
+\usepackage{ae}               %-->  Corrige problema nas fontes
+%\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{enumerate}
+%\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{amstext}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{esint}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{color}
+\usepackage{amscd}
+\usepackage{tabularx}
+\usepackage{cancel}
+\usepackage{cases}
+\usepackage[normalem]{ulem} 
+\usepackage{soul}
+\usepackage[mathscr]{eucal}
+\usepackage{hyperref}
+\usepackage{bm} %bold for vectors and symbols
+%\usepackage{physics}
+\usepackage{subcaption}
+\usepackage{enumitem}   
+\usepackage{mathtools}
+\usepackage[]{algorithm2e}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+%\usepackage{biblatex} %to use citeonline
+
+
+%References
+%\addbibresource{References.bib}  
+\usepackage{natbib} %to use citep
+
+
+%highlight
+\usepackage{alltt}
+\definecolor{string}{rgb}{0.7,0.0,0.0}
+\definecolor{comment}{rgb}{0.13,0.54,0.13}
+\definecolor{keyword}{rgb}{0.0,0.0,1.0}
+\usepackage{mdframed}
+
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{L}[1]{>{\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\newcommand{\rs}{R\$ \ }
+\DeclareMathOperator*{\sen}{sen}
+\DeclareMathOperator*{\spn}{span}
+\DeclareMathOperator*{\sign}{sign}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\posto}{posto}
+\DeclareMathOperator*{\diag}{diag}
+\newcommand{\E}{\quad \mbox{e}\quad}
+\newcommand{\e}{ \; \mbox{e} \; }
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\white}[1]{\textcolor{white}{#1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\res}{\noindent \textit{\underline{Resolução:} }}
+\newcommand{\bs}[1]{\boldsymbol{#1}} %\boldsymbol
+\newcommand{\bsx}{\textbf{x}}
+\newcommand{\bsy}{\textbf{y}}
+
+\newtheorem{theorem}{Teorema}
+\newtheorem{definition}[theorem]{Definição}
+\newtheorem{proposition}[theorem]{Proposição}
+\newtheorem{teor}[theorem]{Teorema}
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{corollary}[theorem]{Corolário}
+\newtheorem{remark}[theorem]{Observação}
+
+
+%Evaluated symbol
+% \DeclarePairedDelimiter\evaluat{.}{\rvert}
+% \reDeclarePairedDelimiterInnerWrapper\evaluat{nostar}{%
+%     \mathopen{}#2\mathclose{#3}%
+% }
+% \reDeclarePairedDelimiterInnerWrapper\evaluat{star}{%
+%     \mathopen{}\mathclose\bgroup #1\hskip -\nulldelimiterspace \relax
+%     #2\aftergroup\egroup #3%
+% }
+
+
+\geometry{
+%paperwidth=210mm,
+%paperheight=297mm,
+%textwidth=150mm,
+%textheight=200mm,
+top=25mm,
+bottom=20mm,
+left=25mm,
+right=20mm}
+\renewcommand{\baselinestretch}{1.1}
+
+\raggedbottom %evita aquele espaço extra
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+\includegraphics[scale=0.4]{UNC_logo-main.jpg}
+\end{center}
+\begin{center}
+University of North Carolina at Chapel Hill\\
+% Learning IBAMR \\
+\vspace{5cm}
+\begin{Large}
+\textbf{Learning IBAMR}\\
+\end{Large}
+\vspace{4.5cm}
+\begin{tabular}{llC{4cm}llll}
+
+\end{tabular}\\
+\vspace{4.5cm}
+Chapel Hill, August 2022.
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+.
+
+% \newpage
+% \thispagestyle{empty}
+% \section*{Apresentação}
+% Nesse relatório apresentamos o problema de Navier-Stokes modelado por um programa desenvolvido em código Fortran 90 e alguns testes que visam avaliar os resultados para que, então, o mesmo seja usado para modelar uma câmara do coração levando em conta a função de espessura $h=h(x,y)$.
+
+% \vskip 0.2 cm
+% \par 
+ \newpage
+\thispagestyle{empty}
+%\listoffigures
+\subsection*{Current To Do List}
+\begin{enumerate}
+    \item Iterative Methods
+    \item Multigrid
+    \item DG
+    \item H-Div (H-curl?)
+\end{enumerate}
+
+\subsection*{Questions we want to be able to answer:}
+\subsubsection*{iterative methods}
+- high frequency? what does it mean to have high frequency
+
+- do we ever use preconditioners like PA=Pb
+\subsection*{multigrid}
+- how do the eigendirections change when we coarsen the grid?
+- what guarentees that squashing errors on coarse grid keeps them small on fine grid 
+
+\subsubsection*{H-Div}
+- Why do H-Div conforming elements preserve imcompresibility 
+
+
+\subsection*{Eventually want to learn}
+
+\begin{enumerate}
+\item MPI exercises %https://www.mcs.anl.gov/~itf/dbpp/text/node104.html#SECTION035100000000000000000
+\item parallel computing
+\item type up adams bashforth, stability/consistency, and projection methods
+\item saddle point
+\item eigenvalues
+\item ppm vs spacial centered method (related to slope limiters)
+\item spectral methods
+\end{enumerate}
+
+\begin{itemize}
+    \item Laryssa teaches Bryn cmake
+    \item mass lumping - citations in paper by david (shared in slack convo bryn and laryssa)
+    \item checkerboard
+    \item locking
+    \item study data\_idx;
+    \item Arena memory;
+    \item Find out what object\_name is used for in IBExplicitHierarchyIntegrator;
+    \item check that IBFEMethod is the child of IBStrategy
+    \item Go over IBTK example, LaplaceSC  and explore: register, index, idx is just an int - how does the level get to know all the information from the int? AllocatePatchData?  etc
+    \item [Laryssa] check the classname::classname(input1): d\_input1(input1) and how this fills out/initializes the class attributes
+    \item In ibtk/libmesh\_utilities.h check the linear interpolation - line 1034 - intersect line wiht edge
+    \item where are the boundary conditions implemented and how to specify boundary conditions outside of the input file 
+    \item where are the ghost values for the scratch context filled;
+    \item Stability and consistency;
+\end{itemize}
+\end{document}
